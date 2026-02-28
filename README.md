@@ -81,21 +81,27 @@ List the key features of your project:
 
 #### Schematic & Circuit
 
-![Circuit](circuit.jpeg)
-*Add caption explaining connections*
+<img src="circuit.jpeg" width="400">
 
-![Schematic](schematiccircuit.jpg)
-*Add caption explaining the schematic*
+*Figure 1: Circuit diagram of the Smart Lane Change Alert System. Two ultrasonic sensors are connected to the Arduino Uno to detect obstacles in nearby lanes. The buzzer is connected to pin 6 to provide an alert when a vehicle is detected within the threshold distance, and a relay connected to pin 4 controls the DC motor to reduce the speed.*
+
+<img src="schematiccircuit.jpg" width="400">
+
+*Figure 2: Schematic diagram showing the working principle of the system. Ultrasonic sensors measure the distance of nearby vehicles and send the data to the Arduino. When the distance is below the safe limit, the Arduino activates the buzzer and controls the relay to slow down the motor.*
 
 #### Build Photos
 
-![Cyber Divas](team.jpeg)
+<img src="team.jpeg" width="350">
 
-![Components](components.jpeg)
-*List out all components shown*
+*Team members working on the Smart Lane Change Alert System prototype during the hackathon.*
 
-![Final](final.jpeg)
-*Explain the final build*
+<img src="components.jpeg" width="350">
+
+*Components used in the project: Arduino Uno, ultrasonic sensors (HC-SR04), relay module, DC motor, buzzer, breadboard, jumper wires, power supply, and connecting cables.*
+
+<img src="final.jpeg" width="350">
+
+*Final prototype of the Smart Lane Change Alert System demonstrating obstacle detection using ultrasonic sensors, driver alert through a buzzer, and automatic motor control through a relay for improved lane safety.*
 
 ---
 
