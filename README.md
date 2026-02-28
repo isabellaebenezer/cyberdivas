@@ -2,27 +2,26 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# [Smart Lane Intrusion Alert] 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: [CyberDivas]
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: Isabella Ebenezer - [College of Engineering Perumon]
+- Member 2: Azminsha N - [College of Engineering Perumon]
 
-### Hosted Project Link
-[mention your project hosted link here]
+
 
 ### Project Description
-[2-3 lines about what your project does]
+This project proposes a Smart Lane Change Alert System that detects vehicles entering the lane using ultrasonic sensors. When an object is detected within a safe distance, the system alerts the driver with a buzzer and automatically reduces the vehicle speed to prevent possible collisions. It demonstrates a low-cost driver assistance system for improving road safety.
 
 ### The Problem statement
-[What problem are you solving?]
+Vehicles changing lane without prior alert is causing accidents. We are trying to find a solution for this
 
 ### The Solution
-[How are you solving it?]
+The easy way to solve it is using Lane Intrusion Detection System
 
 ---
 
@@ -30,188 +29,73 @@
 
 ### Technologies/Components Used
 
-**For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
 
 **For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
+- Main components: [Arduino UNO, Ultrasonic Sensor (HC-SR04), Buzzer, Relay Module, DC Motor, 16x2 LCD, LED]
+- Specifications: [Arduino UNO (5V operating voltage), Ultrasonic sensor detection range 2–400 cm, DC motor 5–9V, Relay module 5V, 16x2 LCD display, Piezo buzzer 5V]
+- Tools required: [Breadboard, Jumper wires, USB cable, Power supply (5V), Laptop with Arduino IDE, Screwdriver]
 
 ---
 
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Feature 1: Real-time obstacle detection using ultrasonic sensors.
+- Feature 2: Automatic warning system using a buzzer when another vehicle enters the lane.
+- Feature 3: Automatic motor speed reduction to prevent possible collisions.
+- Feature 4: Low-cost and simple driver assistance prototype using Arduino.
 
 ---
 
 ## Implementation
 
-### For Software:
-
-#### Installation
-```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
-```
-
-#### Run
-```bash
-[Run commands - e.g., npm start, python app.py]
-```
 
 ### For Hardware:
 
 #### Components Required
-[List all components needed with specifications]
+- Arduino UNO (5V microcontroller board)
+- Ultrasonic Sensors HC-SR04 (2 units, detection range 2–400 cm)
+- Relay Module (5V)
+- DC Motor
+- Piezo Buzzer (5V)
+- 16×2 LCD Display
+- LED indicator
+- Breadboard
+- Jumper wires
+- USB cable / 5V power supply
 
 #### Circuit Setup
-[Explain how to set up the circuit]
+1. Connect the ultrasonic sensors' VCC to 5V and GND to the ground of the Arduino.
+2. Connect the TRIG and ECHO pins of the ultrasonic sensors to digital pins of the Arduino.
+3. Connect the relay control pin to Arduino digital pin 4 to control the DC motor.
+4. Connect the buzzer to Arduino pin 6 and GND.
+5. Connect the DC motor through the relay module so that the Arduino can control the motor power.
+6. Connect the 16×2 LCD display and LED indicators to display system status and alerts.
+7. Power the Arduino using a USB cable or a 5V power supply.
 
 ---
 
 ## Project Documentation
 
-### For Software:
-
-#### Screenshots (Add at least 3)
-
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
-#### Diagrams
-
-**System Architecture:**
-
-![Architecture Diagram](docs/architecture.png)
-*Explain your system architecture - components, data flow, tech stack interaction*
-
-**Application Workflow:**
-
-![Workflow](docs/workflow.png)
-*Add caption explaining your workflow*
-
----
-
 ### For Hardware:
 
 #### Schematic & Circuit
 
-![Circuit](Add your circuit diagram here)
+![Circuit](circuit.jpeg)
 *Add caption explaining connections*
 
-![Schematic](Add your schematic diagram here)
+![Schematic](schematiccircuit.jpg)
 *Add caption explaining the schematic*
 
 #### Build Photos
 
-![Team](Add photo of your team here)
+![Cyber Divas](team.jpeg)
 
-![Components](Add photo of your components here)
+![Components](components.jpeg)
 *List out all components shown*
 
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
+![Final](final.jpeg)
 *Explain the final build*
-
----
-
-## Additional Documentation
-
-### For Web Projects with Backend:
-
-#### API Documentation
-
-**Base URL:** `https://api.yourproject.com`
-
-##### Endpoints
-
-**GET /api/endpoint**
-- **Description:** [What it does]
-- **Parameters:**
-  - `param1` (string): [Description]
-  - `param2` (integer): [Description]
-- **Response:**
-```json
-{
-  "status": "success",
-  "data": {}
-}
-```
-
-**POST /api/endpoint**
-- **Description:** [What it does]
-- **Request Body:**
-```json
-{
-  "field1": "value1",
-  "field2": "value2"
-}
-```
-- **Response:**
-```json
-{
-  "status": "success",
-  "message": "Operation completed"
-}
-```
-
-[Add more endpoints as needed...]
-
----
-
-### For Mobile Apps:
-
-#### App Flow Diagram
-
-![App Flow](docs/app-flow.png)
-*Explain the user flow through your application*
-
-#### Installation Guide
-
-**For Android (APK):**
-1. Download the APK from [Release Link]
-2. Enable "Install from Unknown Sources" in your device settings:
-   - Go to Settings > Security
-   - Enable "Unknown Sources"
-3. Open the downloaded APK file
-4. Follow the installation prompts
-5. Open the app and enjoy!
-
-**For iOS (IPA) - TestFlight:**
-1. Download TestFlight from the App Store
-2. Open this TestFlight link: [Your TestFlight Link]
-3. Click "Install" or "Accept"
-4. Wait for the app to install
-5. Open the app from your home screen
-
-**Building from Source:**
-```bash
-# For Android
-flutter build apk
-# or
-./gradlew assembleDebug
-
-# For iOS
-flutter build ios
-# or
-xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug
-```
 
 ---
 
@@ -221,14 +105,14 @@ xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug
 
 | Component | Quantity | Specifications | Price | Link/Source |
 |-----------|----------|----------------|-------|-------------|
-| Arduino Uno | 1 | ATmega328P, 16MHz | ₹450 | [Link] |
+| Arduino Uno | 1 | ATmega328P, 16MHz | ₹250 | [Link] |
 | LED | 5 | Red, 5mm, 20mA | ₹5 each | [Link] |
 | Resistor | 5 | 220Ω, 1/4W | ₹1 each | [Link] |
 | Breadboard | 1 | 830 points | ₹100 | [Link] |
 | Jumper Wires | 20 | Male-to-Male | ₹50 | [Link] |
-| [Add more...] | | | | |
+| [BC MOTOR] | 1 each| ₹20| | |
 
-**Total Estimated Cost:** ₹[Amount]
+**Total Estimated Cost:** ₹[1000]
 
 #### Assembly Instructions
 
@@ -262,111 +146,11 @@ xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug
 
 ---
 
-### For Scripts/CLI Tools:
-
-#### Command Reference
-
-**Basic Usage:**
-```bash
-python script.py [options] [arguments]
-```
-
-**Available Commands:**
-- `command1 [args]` - Description of what command1 does
-- `command2 [args]` - Description of what command2 does
-- `command3 [args]` - Description of what command3 does
-
-**Options:**
-- `-h, --help` - Show help message and exit
-- `-v, --verbose` - Enable verbose output
-- `-o, --output FILE` - Specify output file path
-- `-c, --config FILE` - Specify configuration file
-- `--version` - Show version information
-
-**Examples:**
-
-```bash
-# Example 1: Basic usage
-python script.py input.txt
-
-# Example 2: With verbose output
-python script.py -v input.txt
-
-# Example 3: Specify output file
-python script.py -o output.txt input.txt
-
-# Example 4: Using configuration
-python script.py -c config.json --verbose input.txt
-```
-
-#### Demo Output
-
-**Example 1: Basic Processing**
-
-**Input:**
-```
-This is a sample input file
-with multiple lines of text
-for demonstration purposes
-```
-
-**Command:**
-```bash
-python script.py sample.txt
-```
-
-**Output:**
-```
-Processing: sample.txt
-Lines processed: 3
-Characters counted: 86
-Status: Success
-Output saved to: output.txt
-```
-
-**Example 2: Advanced Usage**
-
-**Input:**
-```json
-{
-  "name": "test",
-  "value": 123
-}
-```
-
-**Command:**
-```bash
-python script.py -v --format json data.json
-```
-
-**Output:**
-```
-[VERBOSE] Loading configuration...
-[VERBOSE] Parsing JSON input...
-[VERBOSE] Processing data...
-{
-  "status": "success",
-  "processed": true,
-  "result": {
-    "name": "test",
-    "value": 123,
-    "timestamp": "2024-02-07T10:30:00"
-  }
-}
-[VERBOSE] Operation completed in 0.23s
-```
-
----
-
 ## Project Demo
 
-### Video
-[Add your demo video link here - YouTube, Google Drive, etc.]
+[Demo Video](https://drive.google.com/file/d/1f-2VLM8z8T_Al_7oRrIkeHmiQFCU4Ugj/view?usp=sharing)
 
-*Explain what the video demonstrates - key features, user flow, technical highlights*
-
-### Additional Demos
-[Add any extra demo materials/links - Live site, APK download, online demo, etc.]
+*Click the image to watch the project demonstration video.*
 
 ---
 
@@ -374,19 +158,9 @@ python script.py -v --format json data.json
 
 If you used AI tools during development, document them here for transparency:
 
-**Tool Used:** [e.g., GitHub Copilot, v0.dev, Cursor, ChatGPT, Claude]
+**Tool Used:** [Chatgpt]
 
-**Purpose:** [What you used it for]
-- Example: "Generated boilerplate React components"
-- Example: "Debugging assistance for async functions"
-- Example: "Code review and optimization suggestions"
-
-**Key Prompts Used:**
-- "Create a REST API endpoint for user authentication"
-- "Debug this async function that's causing race conditions"
-- "Optimize this database query for better performance"
-
-**Percentage of AI-generated code:** [Approximately X%]
+**Percentage of AI-generated code:** [Approximately 40%]
 
 **Human Contributions:**
 - Architecture design and planning
@@ -400,9 +174,9 @@ If you used AI tools during development, document them here for transparency:
 
 ## Team Contributions
 
-- [Name 1]: [Specific contributions - e.g., Frontend development, API integration, etc.]
-- [Name 2]: [Specific contributions - e.g., Backend development, Database design, etc.]
-- [Name 3]: [Specific contributions - e.g., UI/UX design, Testing, Documentation, etc.]
+- [Isabella Ebenezer]: [simulated the circuit and implemeted the physical hardware]
+- [Azminsha N ]: [Proposed the idea , brainstorming the circuit design , checking final output]
+
 
 ---
 
